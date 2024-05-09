@@ -1,2 +1,9 @@
-# sujin_portfolio
-portfolio
+# Portfolio
+
+<br>
+
+### STACK
+- React
+- Typescript
+- Recoil
+
