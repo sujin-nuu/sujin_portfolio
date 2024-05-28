@@ -1,2 +1,2 @@
 export * from './errors';
-export * from './dash';
+export * from './main';

@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom"
 import * as paths from './const';
 import { DashLayout } from "src/layouts";
-import { DashBoardPage, NotFoundPage } from "src/pages";
+import { MainPage, NotFoundPage } from "src/pages";
 
 export const MainRouter = () => {
 
@@ -14,7 +14,7 @@ export const MainRouter = () => {
                     children: [
                         {
                             path: paths.ROUTE_MAIN,
-                            element: <DashBoardPage />
+                            element: <MainPage />
                         },
                     ]
                 }
