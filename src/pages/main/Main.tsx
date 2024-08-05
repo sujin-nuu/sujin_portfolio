@@ -1,20 +1,26 @@
-import { MainSection } from "src/components/main";
-import { mainSectionData } from "src/modules";
+import { MainCard, MainSplash } from "src/components/main";
+import { mainSectionData, sectionT } from "src/modules";
+import styled from "styled-components";
 
 const Main = () => {
-    const section = mainSectionData.map((i: any) => {
-        return (
-            <MainSection
-                key={i.key}
-                title={i?.title}
-                route={i?.route}
-            />
-        )
-    })
     return (
-        <>
-            {section}
-        </>
+        <StyledMainContainer>
+            <MainSplash />
+            {
+                mainSectionData.map((data: sectionT) => {
+                    return (
+                        <MainCard
+                            data={data}
+                        />
+                    )
+                })
+            }
+        </StyledMainContainer>
     )
 }
 export default Main;
+
+const StyledMainContainer = styled.div`
+    width: 100%;
+    height: 100%;
+`

@@ -38,6 +38,11 @@ a {
     text-decoration: none;
 }
 
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
 .header-div {
     width: 100%;
     height: 5rem;

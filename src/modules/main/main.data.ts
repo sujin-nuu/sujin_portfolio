@@ -2,22 +2,26 @@ export const mainSectionData:sectionT[] =[
     {
         key: 0,
         title: "11",
-        route: ""
+        route: "",
+        imgUrl: ""
     },
     {
         key: 1,
         title: "22",
-        route: ""
+        route: "",
+        imgUrl: ""
     },
     {
         key: 2,
         title: "33",
-        route: ""
+        route: "",
+        imgUrl: ""
     }
 ]
 
-interface sectionT{
+export interface sectionT{
     key:number;
     title?: string;
     route?: string;
+    imgUrl?: string;
 }

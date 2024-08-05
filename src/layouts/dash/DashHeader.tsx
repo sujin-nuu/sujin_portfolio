@@ -13,6 +13,7 @@ export const DashHeader = () => {
             <div className="header-div">
                 <p className="logo" onClick={handleClickLogo}>SUJIN</p>
                 <div></div>
+                <p>=</p>
             </div>
         </>
     )
