@@ -6,7 +6,7 @@
         'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 }
 
-#root{
+#root {
     width: 100vw;
     height: 100vh;
 }
@@ -38,7 +38,7 @@ a {
     text-decoration: none;
 }
 
-.flex-center{
+.flex-center {
     display: flex;
     justify-content: center;
 }

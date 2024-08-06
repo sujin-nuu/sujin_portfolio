@@ -1,7 +1,7 @@
 export const ROUTE_ROOT = '/sujin_portfolio/';
 
 /** 메인 */
-export const ROUTE_MAIN = `${ROUTE_ROOT}/`;
+export const ROUTE_MAIN = `${ROUTE_ROOT}`;
 
 /* project detail */
 export const ROUTE_PROJ_DETAIL = `${ROUTE_ROOT}/proj/:id`;
