@@ -7,7 +7,7 @@ import { MainRouter } from './routes';
 function App() {
   return (
     <Suspense fallback={<>LOADING</>}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <MainRouter />
       </BrowserRouter>
     </Suspense>
