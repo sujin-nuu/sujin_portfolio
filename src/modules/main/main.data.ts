@@ -1,21 +1,18 @@
 export const mainSectionData:sectionT[] =[
     {
         key: 0,
-        title: "11",
-        route: "",
-        imgUrl: ""
+        title: "PROJECT",
+        route: ""
     },
     {
         key: 1,
-        title: "22",
-        route: "",
-        imgUrl: ""
+        title: "CAREER",
+        route: ""
     },
     {
         key: 2,
-        title: "33",
-        route: "",
-        imgUrl: ""
+        title: "CONTACT",
+        route: ""
     }
 ]
 
@@ -23,5 +20,4 @@ export interface sectionT{
     key:number;
     title?: string;
     route?: string;
-    imgUrl?: string;
 }
