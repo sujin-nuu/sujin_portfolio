@@ -1,4 +1,3 @@
-import { sectionT } from "src/modules";
 import styled from "styled-components"
 
 interface MainCardProps {
@@ -7,7 +6,9 @@ interface MainCardProps {
 export const MainCard = (props: MainCardProps) => {
     const { data } = props;
     return (
-        <StyledCardContainer>
+        <StyledCardContainer
+            key={data?.key}
+        >
             <StyledCardLabelContainer>
                 <StyledLabel>
                     {data?.title}
@@ -18,14 +19,15 @@ export const MainCard = (props: MainCardProps) => {
 }
 
 const StyledCardContainer = styled.div`
-    width: calc(33% - 12px);
+    width: calc(28rem - 12px);
     border-radius: 20px;
     height: 397px;
     border-radius: 16px;
-    background-color: #89dcff;
+    background-color: #d9f0f9;
     display: inline-block;
     margin: 0 10px 0 10px;    
     position: relative;
+    cursor: pointer;
 `
 
 const StyledCardLabelContainer = styled.span` 
@@ -68,14 +70,17 @@ const StyledCardLabelContainer = styled.span`
 
 const StyledLabel = styled.span`
     width: 140px;
+    padding: 0 1.2rem;
     height: 40px;
     line-height: 40px;
     font-size: 14px;
     border-radius: 20px;
-    background-color : #89dcff;
+    background-color : #d9f0f9;
     margin: 2px 2px 0 0;
     color: #000;
     text-align: center;
     display: inline-block;
     margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `
