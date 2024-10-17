@@ -1,3 +1,4 @@
+import { Footer } from "src/components";
 import { MainSection, MainSplash } from "src/components/main";
 import { mainSectionData, sectionT } from "src/modules";
 import styled from "styled-components";
@@ -15,6 +16,7 @@ const Main = () => {
                     )
                 })
             }
+            <Footer />
         </StyledMainContainer>
     )
 }
