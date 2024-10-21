@@ -22,7 +22,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    font-family: 'EF_watermelonSalad';
+    font-family: 'MangoDdobak-B';
     color: #3f3f3f;
 }
 
@@ -40,6 +40,16 @@ a {
 .flex-center {
     display: flex;
     justify-content: center;
+}
+
+.flex-spaceAround{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-right{
+    display: flex;
+    justify-content: right;
 }
 
 .header-div {
@@ -82,15 +92,22 @@ a {
 }
 
 @font-face {
-    font-family: 'EF_watermelonSalad';
+    font-family: 'watermelonSalad';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Binggrae-Two';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff');
+    font-family: 'omyu_pretty';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }

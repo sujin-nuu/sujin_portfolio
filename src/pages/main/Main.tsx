@@ -1,21 +1,15 @@
 import { Footer } from "src/components";
-import { MainSection, MainSplash } from "src/components/main";
-import { mainSectionData, sectionT } from "src/modules";
+import { MainCareerSection, MainContactSection, MainProjectSection, MainSplash } from "src/components/main";
 import styled from "styled-components";
 
 const Main = () => {
     return (
         <StyledMainContainer>
             <MainSplash />
-            {
-                mainSectionData.map((data: sectionT) => {
-                    return (
-                        <MainSection
-                            data={data}
-                        />
-                    )
-                })
-            }
+            <MainProjectSection />
+            <MainCareerSection />
+            <MainContactSection />
+            <div  style={{marginBottom: "2rem"}}/>
             <Footer />
         </StyledMainContainer>
     )

@@ -1,3 +1,4 @@
-export * from './MainCard';
 export * from './MainSplash';
-export * from './MainSection';
+export * from './MainProjectSection';
+export * from './MainCareerSection';
+export * from './MainContactSection';
